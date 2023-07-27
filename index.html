@@ -4,14 +4,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
-  <title>Home &mdash; </title>
+  <link rel="stylesheet" href="css/general.css" />
+  <title>Home &mdash; Cluckin' Bell</title>
 </head>
 
 <body>
   <header class="header">
-
+    <a href="#">
+      <img class="logo" src="img/cluckinbell-full.png" alt="Cluckin' Bell Logo">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="">Our Menu</a></li>
+        <li><a class="main-nav-link" href="">Locations</a></li>
+        <li><a class="main-nav-link" href="">About Us</a></li>
+        <li><a class="main-nav-link" href="">Rewards</a></li>
+      </ul>
+    </nav>
+    <nav class="sign-up-nav">
+      <ul class="main-nav-list cta-nav-list">
+        <li><a class="main-nav-link nav-cta" href="">Join Us</a></li>
+      </ul>
+    </nav>
   </header>
+  <main>
+
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">A delicious meal reminiscent of the South</h1>
+          <a href="" class="btn btn--full">
+            Join Us
+          </a>
+          <a href="" class="btn btn--second">
+            Delivery
+          </a>
+          <div class="deliveroo-box">
+            <p>
+              Order our kitchen, brought to you by Deliveroo
+            </p>
+            <svg class="deliveroo-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="deliveroo">
+              <path fill="#fcc419"
+                d="m16.869 0-1.123 10.578-1.914-8.918-6.039 1.258 1.896 8.918L1 13.66l1.546 7.112L17.845 24l3.498-7.751L23 .638 16.869 0zM11.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm4 2a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
+              </path>
+            </svg>
+          </div>
+
+        </div>
+        <div class="hero-img-box">
+          <img src="img/chicken-bucket.png" alt="chicken box" class="hero-img">
+        </div>
+      </div>
+    </section>
+    <section class="section-menu">
+      <div class="container">
+        <span class="subheading">OUR MENU</span>
+        <h2 class="heading-secondary no-marg">What do you fancy?</h2>
+      </div>
+
+      <div id="slider-1">
+        <div class="swiper" id="swiper-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="container grid grid--2-cols">
+                <h2 class="heading-secondary title-men">Family Bucket</h2>
+                <a class="btn btn--full view-men" href="">View Menu</a>
+                <img class="menu-img-box" src="img/chicken-bucket-menu.png" alt="">
+              </div>
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div class="container grid grid--2-cols">
+                <h2 class="heading-secondary title-men">Wings</h2>
+                <a class="btn btn--full view-men" href="">View Menu</a>
+                <img class="menu-img-box" src="img/chicken-bucket-menu.png" alt="">
+              </div>
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div class="container grid grid--2-cols">
+                <h2 class="heading-secondary title-men">Sandwiches</h2>
+                <a class="btn btn--full view-men" href="">View Menu</a>
+                <img class="menu-img-box" src="img/chicken-bucket-menu.png" alt="">
+              </div>
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div class="container grid grid--2-cols">
+                <h2 class="heading-secondary title-men">Salads</h2>
+                <a class="btn btn--full view-men" href="">View Menu</a>
+                <img class="menu-img-box" src="img/chicken-bucket-menu.png" alt="">
+              </div>
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div class="container grid grid--2-cols">
+                <h2 class="heading-secondary title-men">Drinks</h2>
+                <a class="btn btn--full view-men" href="">View Menu</a>
+                <img class="menu-img-box" src="img/chicken-bucket-menu.png" alt="">
+              </div>
+            </div> <!-- end swiper-slide -->
+          </div> <!-- end swiper-wrapper -->
+
+          <div class="swiper-custom-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"
+              id="nav-left">
+              <path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"
+              id="nav-right">
+              <path
+                d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
+              </path>
+            </svg>
+          </div> <!-- end swiper-custom-nav -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section> <!-- end section-menu -->
+
+    <section class="section-locations">
+
+    </section>
+  </main>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src='js/app.js'></script>
 </body>
 
 </html>
