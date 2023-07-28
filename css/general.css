@@ -63,6 +63,9 @@
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+.lightest-red {
+  color: #a82b2b;
+}
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;

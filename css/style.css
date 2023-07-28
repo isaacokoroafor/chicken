@@ -162,6 +162,15 @@ body {
 
 .section-menu {
   padding: 9.6rem 0;
+  position: relative;
+}
+.menu-bg {
+  position: absolute;
+  opacity: 0.1;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 .view-men {
   grid-column: 1;
@@ -189,18 +198,19 @@ body {
   margin-bottom: 0;
 }
 
-.swiper-custom-nav {
-  /* position: absolute;
+/* .swiper-custom-nav { */
+/* position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0; */
-  /* z-index: 10; */
-  /* padding: 16rem;
+/* z-index: 10; */
+/* padding: 16rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
   background-color: aqua; */
-}
+/* } */
+
 .swiper-custom-nav {
   /* background-color: aqua; */
   position: absolute;
@@ -223,4 +233,13 @@ body {
 }
 .swiper-custom-nav svg:active {
   transform: scale(1.5);
+}
+
+/* ***************************** */
+/* LOCATIONS SECTION */
+/* ***************************** */
+
+.section-locations {
+  padding: 9.6rem 0;
+  background-color: #fcc419;
 }
