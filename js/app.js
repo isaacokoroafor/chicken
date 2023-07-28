@@ -16,4 +16,6 @@ new Swiper("#swiper-1", {
     nextEl: "#nav-right",
     prevEl: "#nav-left",
   },
+  preventClicks: false,
+  preventClicksPropagation: false,
 });

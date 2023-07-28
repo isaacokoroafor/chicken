@@ -190,17 +190,29 @@ body {
 }
 
 .swiper-custom-nav {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
-  z-index: 10;
-  padding: 16rem;
+  left: 0; */
+  /* z-index: 10; */
+  /* padding: 16rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  background-color: aqua; */
 }
-
+.swiper-custom-nav {
+  /* background-color: aqua; */
+  position: absolute;
+  top: 50%;
+  padding-left: 16rem;
+  z-index: 10;
+}
+.rightnav {
+  right: 0;
+  padding-right: 16rem;
+  padding-left: 0;
+}
 .swiper-custom-nav svg {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
