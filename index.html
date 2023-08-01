@@ -65,7 +65,7 @@
       </div>
     </section>
     <section class="section-menu">
-      <img class="menu-bg" src="img/fleur-de-bell.png" alt="background image">
+      <img class="menu-bg" src="img/fleur-de-bell-10deg.png" alt="background image">
       <div class="container">
         <span class="subheading">OUR MENU</span>
         <h2 class="heading-secondary no-marg">What do you fancy?</h2>
@@ -134,6 +134,31 @@
       <div class="container">
         <span class="subheading lightest-red">Locations</span>
         <h2 class="heading-secondary">Support your local</h2>
+        <div class="grid grid--2-cols">
+          <div class="locations-img-box">
+            <img class="locations-img" src="img/vector-bell.png" alt="vector map icon">
+          </div>
+          <h2 class="heading-secondary title-locations no-marg">Find a Restaurant</h2>
+          <button class="open-button btn btn--full view-locations">Find Locations</button>
+          <!-- <a class="btn btn--full view-locations" href="">Find Locations</a> -->
+        </div>
+        <dialog class="modal" id="modal">
+          <div class="flex-column">
+            <h2 class="heading-secondary">Find a Restaurant</h2>
+            <form action="" method="dialog">
+              <input placeholder="Enter address, city or postcode" type="text">
+              <button class="btn btn--full ">Search</button>
+            </form>
+          </div>
+
+          <svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+            viewBox="0 0 256 256">
+            <path
+              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z">
+            </path>
+          </svg>
+        </dialog>
+
       </div>
     </section>
   </main>
