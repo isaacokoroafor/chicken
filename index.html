@@ -17,14 +17,14 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header sticky">
     <a href="#">
       <img class="logo" src="img/cluckinbell-full.png" alt="Cluckin' Bell Logo">
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="">Our Menu</a></li>
-        <li><a class="main-nav-link" href="">Locations</a></li>
+        <li><a class="main-nav-link" href="#our-menu">Our Menu</a></li>
+        <li><a class="main-nav-link" href="#locations">Locations</a></li>
         <li><a class="main-nav-link" href="">About Us</a></li>
         <li><a class="main-nav-link" href="">Rewards</a></li>
       </ul>
@@ -64,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section class="section-menu">
+    <section class="section-menu" id="our-menu">
       <img class="menu-bg" src="img/fleur-de-bell-10deg.png" alt="background image">
       <div class="container">
         <span class="subheading">OUR MENU</span>
@@ -130,7 +130,7 @@
       </div>
     </section> <!-- end section-menu -->
 
-    <section class="section-locations">
+    <section class="section-locations" id="locations">
       <div class="container">
         <span class="subheading lightest-red">Locations</span>
         <h2 class="heading-secondary">Support your local</h2>
@@ -141,13 +141,31 @@
           <h2 class="heading-secondary title-locations no-marg">Find a Restaurant</h2>
           <button class="open-button btn btn--full view-locations">Find Locations</button>
           <!-- <a class="btn btn--full view-locations" href="">Find Locations</a> -->
+        </div> <!-- end grid -->
+        <div class="grid grid--2-cols">
+          <div class="locations-text-box">
+
+          </div>
         </div>
         <dialog class="modal" id="modal">
           <div class="flex-column">
-            <h2 class="heading-secondary">Find a Restaurant</h2>
+            <div class="h2-box">
+              <h2 class="heading-secondary">Find a Restaurant</h2>
+            </div>
             <form action="" method="dialog">
               <input placeholder="Enter address, city or postcode" type="text">
-              <button class="btn btn--full ">Search</button>
+              <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f03e3e" viewBox="0 0 256 256">
+                  <path
+                    d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z">
+                  </path>
+                </svg>
+                <a href="">Use my Location</a>
+              </div>
+
+              <div class="centered">
+                <button class="btn btn--full ">Search</button>
+              </div>
             </form>
           </div>
 
@@ -158,9 +176,9 @@
             </path>
           </svg>
         </dialog>
-
-      </div>
+      </div> <!-- end container -->
     </section>
+
   </main>
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
