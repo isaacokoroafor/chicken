@@ -326,3 +326,80 @@ a:active {
   background-color: #fcc419;
   text-decoration: none;
 }
+
+.section-address {
+  padding: 9.6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.address-container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+/* ***************************** */
+/* ABOUT US SECTION */
+/* ***************************** */
+.section-about-us {
+  padding: 9.6rem 0;
+  position: relative;
+  background-image: url(../img/arthur-poulin-NhU0nUR7920-unsplash.png);
+  padding-bottom: 66.49%;
+  background-size: cover;
+}
+/* 
+.about-bg {
+  position: absolute; */
+/* opacity: 0.5; */
+/* z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+} */
+.about-head {
+  color: white !important;
+}
+.about-desc {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: white;
+}
+
+.section-about-us h2 {
+  padding-top: 9.6rem;
+  font-weight: 400;
+}
+.section-about-us p {
+  text-align: center;
+}
+.section-about {
+  padding: 9.6rem 0;
+  background-color: white;
+}
+
+.quote {
+  font-size: 2.2rem;
+  line-height: 1.8;
+  color: black;
+}
+.quoter {
+  font-size: 1.8rem;
+}
+.quote-space {
+  margin-bottom: 9.6rem !important;
+}
+.about-img-box {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.about-img {
+  width: auto;
+  height: 30rem;
+}
+
+.about-header {
+  align-self: flex-end;
+  color: #f03e3e;
+  font-size: 4.4rem;
+  line-height: 1.2;
+}

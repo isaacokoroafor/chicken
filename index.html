@@ -25,7 +25,7 @@
       <ul class="main-nav-list">
         <li><a class="main-nav-link" href="#our-menu">Our Menu</a></li>
         <li><a class="main-nav-link" href="#locations">Locations</a></li>
-        <li><a class="main-nav-link" href="">About Us</a></li>
+        <li><a class="main-nav-link" href="#about-us">About Us</a></li>
         <li><a class="main-nav-link" href="">Rewards</a></li>
       </ul>
     </nav>
@@ -142,6 +142,41 @@
           <button class="open-button btn btn--full view-locations">Find Locations</button>
           <!-- <a class="btn btn--full view-locations" href="">Find Locations</a> -->
         </div> <!-- end grid -->
+        <dialog class="modal" id="modal">
+          <div class="flex-column">
+            <div class="h2-box">
+              <h2 class="heading-secondary">Find a Restaurant</h2>
+            </div>
+            <form action="" method="dialog">
+              <input placeholder="Enter address, city or postcode" type="text">
+              <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f03e3e" viewBox="0 0 256 256">
+                  <path
+                    d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z">
+                  </path>
+                </svg>
+                <a href="">Use my Location</a>
+              </div>
+
+              <div class="centered">
+                <button class="btn btn--full">Search</button>
+              </div>
+            </form>
+          </div>
+
+          <svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+            viewBox="0 0 256 256">
+            <path
+              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z">
+            </path>
+          </svg>
+        </dialog>
+      </div> <!-- end container -->
+    </section>
+
+    <section class="section-address">
+      <img class="menu-bg" src="img/fleur-de-bell-10deg.png" alt="background image">
+      <div class="address-container">
         <div class="grid grid--2-cols">
           <div class="locations-text-box">
             <h2 class="heading-secondary">Portland, OR</h2>
@@ -227,38 +262,45 @@
             </div>
           </div>
         </div>
-        <dialog class="modal" id="modal">
-          <div class="flex-column">
-            <div class="h2-box">
-              <h2 class="heading-secondary">Find a Restaurant</h2>
-            </div>
-            <form action="" method="dialog">
-              <input placeholder="Enter address, city or postcode" type="text">
-              <div class="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f03e3e" viewBox="0 0 256 256">
-                  <path
-                    d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z">
-                  </path>
-                </svg>
-                <a href="">Use my Location</a>
-              </div>
-
-              <div class="centered">
-                <button class="btn btn--full">Search</button>
-              </div>
-            </form>
-          </div>
-
-          <svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
-            viewBox="0 0 256 256">
-            <path
-              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z">
-            </path>
-          </svg>
-        </dialog>
-      </div> <!-- end container -->
+      </div> <!-- end address-container -->
     </section>
-
+    <section class="section-about-us" id="about-us">
+      <!-- <img class="about-bg" src="img/arthur-poulin-NhU0nUR7920-unsplash.png" alt="background image"> -->
+      <div class="container">
+        <div class="flex flex-column">
+          <h2 class="heading-secondary about-head">About Us</h2>
+          <p class="about-desc">Cluckin' Bell is all about sharing the cherished traditions and heartfelt generosity of
+            the South with each
+            guest, with a deep-rooted passion for authentic flavours and a heritage that traces back to the charming
+            landscapes of Dixie. So, come on in, take a seat, and experience a journey through the rich tapestry of
+            Southern cuisine that we're honored to bring to your table.</p>
+        </div> <!-- end flex -->
+      </div>
+    </section>
+    <section class="section-about">
+      <div class="container flex flex-column quote-space">
+        <h2 class="heading-secondary heading-quote">Corporate Purpose</h2>
+        <blockquote class="quote">"Good will come to those who are generous and lend freely, who conduct their
+          affairs with justice."
+        </blockquote>
+        <p class="quoter">Psalm 112:5</p>
+      </div>
+      <div class="container">
+        <div class="grid grid--2-cols">
+          <h2 class="heading-sabout-header">
+            Helping the less fortunate
+          </h2>
+          <p>we believe in nourishing both appetites and hearts. Our purpose goes beyond just serving
+            delicious food; it's about making a meaningful impact on the lives of those in need. Through our cherished
+            partnership with a Christian food charity, we are on a mission to bring hope and sustenance to children and
+            individuals facing hunger. With every meal you enjoy at our restaurant, you're contributing to this noble
+            cause.</p>
+          <div class="about-img-box">
+            <img class="about-img" src="img/larm-rmah-AEaTUnvneik-unsplash.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
