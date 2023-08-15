@@ -7,6 +7,9 @@
   margin-bottom: 3.2rem;
   text-transform: uppercase;
 }
+.center-text {
+  text-align: center;
+}
 .btn,
 .btn:link,
 .btn:visited {
@@ -81,6 +84,9 @@
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 /* swiper */
 .swiper-slide {
