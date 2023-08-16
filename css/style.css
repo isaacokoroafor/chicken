@@ -267,7 +267,7 @@ button {
 
 .section-locations {
   padding: 9.6rem 0;
-  background-color: #fcc419;
+  background-color: #fee7a3;
 }
 
 .locations-img-box {
@@ -450,4 +450,39 @@ a:active {
   font-size: 1.8rem;
   text-align: center;
   line-height: 1.8;
+}
+
+/* ***************************** */
+/* REWARDS SECTION */
+/* ***************************** */
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-rewards {
+  padding: 9.6rem 0;
+  background-color: #fee7a3;
+}
+
+.step-number {
+  font-size: 2.4rem;
+  background-color: #f03e3e;
+  color: white;
+  border-radius: 50%;
+  line-height: 6.4rem;
+  width: 6.4rem;
+  text-align: center;
+}
+.step-title {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  font-size: 2.4rem;
+  color: black;
+}
+.step-desc {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.6;
 }
